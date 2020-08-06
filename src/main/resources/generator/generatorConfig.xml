@@ -40,6 +40,9 @@
             <property name="caseSensitive" value="true"/>
         </plugin>
 
+        <!-- 生成 Mapper.xml 文件的 BaseColumns -->
+        <plugin type="com.github.trang.mybatis.generator.plugins.MapperSqlMapConfigPlugin"/>
+
         <jdbcConnection driverClass="${jdbc.driverClass}"
                         connectionURL="${jdbc.url}"
                         userId="${jdbc.user}"
